@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">sheridan.levings.collegeData2</string>
+
+    <string name="name_label">Enter your student Name:</string>
+    <string name="name">Student Name</string>
+
+    <string name="radio">Select your program type:</string>
+    <string name="diploma">Diploma</string>
+    <string name="degree">Degree</string>
+
+    <string name="button">Submit</string>
+
+    <string name="undefined">Unknown</string>
+    <string name="program">Program</string>
+
+    <string name="back">Back</string>
+
+    <string name="required">required</string>
 </resources>

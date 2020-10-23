@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/input_fragment">
+
+    <fragment
+        android:id="@+id/input_fragment"
+        android:name="sheridan.levings.collegeData2.ui.InputFragment"
+        android:label="Input"
+        tools:layout="@layout/fragment_input" >
+        <action
+            android:id="@+id/action_input_to_output"
+            app:destination="@id/output_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/output_fragment"
+        android:name="sheridan.levings.collegeData2.ui.outputFragment"
+        android:label="fragment_output"
+        tools:layout="@layout/fragment_output" >
+        <action
+            android:id="@+id/action_output_to_input"
+            app:destination="@id/input_fragment"
+            app:popUpTo="@id/input_fragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="studentInfo"
+            app:argType="sheridan.levings.collegeData2.model.StudentInfo" />
+    </fragment>
+</navigation>
